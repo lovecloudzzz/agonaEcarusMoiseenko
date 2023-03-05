@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/RoundedButton.sass'
+import styles from './RoundedButton.module.sass'
 
 type RoundedButton = {
     title: string;
@@ -7,6 +7,6 @@ type RoundedButton = {
 
 export const RoundedButton: React.FC<RoundedButton> = ({title}) => {
     return (
-        <button className="RoundedButton">{title}</button>
+        <button className={styles.RoundedButton}>{title}</button>
     );
 };

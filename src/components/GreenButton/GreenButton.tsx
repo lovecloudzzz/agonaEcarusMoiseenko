@@ -1,5 +1,5 @@
 import React from "react";
-import '../styles/GreenButton.sass'
+import styles from './GreenButton.module.sass'
 
 
 interface ButtonProps {
@@ -7,7 +7,7 @@ interface ButtonProps {
 }
 export const GreenButton: React.FC<ButtonProps> = (props) => {
     return (
-        <button className="GreenButton">
+        <button className={styles.GreenButton}>
             {props.name}
         </button>
     );
