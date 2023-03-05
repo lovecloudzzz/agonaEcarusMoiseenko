@@ -1,6 +1,6 @@
 import React from 'react';
 import { SmallBanner, SmallBannerProps } from './SmallBanner';
-import '../styles/SmallBannerArray.sass'
+import styles from './SmallBannerArray.module.sass'
 
 interface SmallBannerArrayProps {
     bannerData: SmallBannerProps[];
@@ -8,7 +8,7 @@ interface SmallBannerArrayProps {
 
 export const SmallBannerArray: React.FC<SmallBannerArrayProps> = ({ bannerData }) => {
     return (
-        <div className= 'SmallBannerArray'>
+        <div className={styles.SmallBannerArray}>
             {bannerData.map((data, index) => (
                 <SmallBanner
                     key={index}

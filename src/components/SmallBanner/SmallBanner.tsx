@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/SmallBanner.sass';
+import styles from './SmallBanner.module.sass';
 
 export interface SmallBannerProps {
     title: string;
@@ -10,7 +10,7 @@ export interface SmallBannerProps {
 
 export const SmallBanner: React.FC<SmallBannerProps> = (props) => {
     return (
-        <div className="SmallBanner">
+        <div className={styles.SmallBanner}>
             <div>
                 <h1>{props.title}</h1>
                 <h2>{props.subtitle}</h2>
@@ -19,7 +19,7 @@ export const SmallBanner: React.FC<SmallBannerProps> = (props) => {
                 </button>
             </div>
             <div>
-                <img src={props.imageUrl} alt="Small Banner" className="SmallBannerImg" />
+                <img src={props.imageUrl} alt="Small Banner" className={styles.SmallBannerImg} />
             </div>
         </div>
     );

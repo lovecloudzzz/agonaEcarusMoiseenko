@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const BannersList = () => {
+export const BannersSlider = () => {
     return (
         <div>
 

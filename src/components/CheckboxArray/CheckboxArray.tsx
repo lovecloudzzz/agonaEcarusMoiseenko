@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../styles/CheckboxArray.sass';
+import styles from './CheckboxArray.module.sass';
 
 interface CheckboxArrayProps {
     arrayTitle: string;
@@ -18,10 +18,10 @@ export const CheckboxArray: React.FC<CheckboxArrayProps> = ({ arrayTitle, option
     };
 
     return (
-        <div className="width">
-            <div className="CheckboxArray">
+        <div className={styles.width}>
+            <div className={styles.CheckboxArray}>
                 <h2>{arrayTitle}</h2>
-                <div className={options.length > 4 ? 'scrollable' : ''}>
+                <div className={options.length > 4 ? styles.scrollable : ''}>
                     {options.map((option) => (
                         <div key={option}>
                             <input
@@ -32,7 +32,7 @@ export const CheckboxArray: React.FC<CheckboxArrayProps> = ({ arrayTitle, option
                                 onChange={() => handleCheckboxChange(option)}
                                 className='CheckboxArrayBox'
                             />
-                            <label htmlFor={option} className="">{option}</label>
+                            <label htmlFor={option}>{option}</label>
                         </div>
                     ))}
                 </div>
