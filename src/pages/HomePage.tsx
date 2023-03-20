@@ -1,7 +1,7 @@
 import React from 'react';
 import {SmallBannerArray} from "../components/SmallBanner/SmallBannerArray";
 import '../styles/HomePage.sass'
-import {BannersSlider} from "../components/Banner/BannersSlider";
+import {BannerSlider} from "../components/Banner/BannerSlider";
 
 const bannerData = [
     {
@@ -18,11 +18,12 @@ const bannerData = [
     }
 ];
 
+
 export const HomePage: React.FC = () => {
     return (
         <div className="HomePage">
             <div>
-                <BannersSlider/>
+                <BannerSlider/>
             </div>
             <SmallBannerArray bannerData={bannerData}/>
         </div>
