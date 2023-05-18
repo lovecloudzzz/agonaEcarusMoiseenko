@@ -1,6 +1,5 @@
 import React from 'react';
 import { Card, CardProps } from './Card';
-import '../styles/CardArray.sass';
 
 interface CardArrayProps {
     cardData: CardProps[];

@@ -1,9 +1,9 @@
 import React from 'react';
-import {RoundedButton} from "../components/RoundedButton";
+import {RoundedButton} from "../components/RoundedButton/RoundedButton";
 import '../styles/MarketPage.sass'
-import {CheckboxArray} from "../components/CheckboxArray";
-import {SpecialCard} from "../components/SpecialCard";
-import {CardArray} from "../components/CardArray";
+import {CheckboxArray} from "../components/CheckboxArray/CheckboxArray";
+import {SpecialCard} from "../components/SpecialCard/SpecialCard";
+import {CardArray} from "../components/Card/CardArray";
 import NikeAirMax2021 from "../assets/NikeAirMax2021.svg";
 
 const options = [
