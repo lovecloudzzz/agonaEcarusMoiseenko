@@ -1,14 +1,15 @@
-import React, {ReactNode} from 'react';
+import React from 'react';
 import styles from './AuthLink.module.sass'
 
 interface AuthLinkProps {
-    children: ReactNode
+    onClick?: () => void;
+    children: React.ReactNode;
 }
 
-export const AuthLink = ({children}: AuthLinkProps) => {
+export const AuthLink: React.FC<AuthLinkProps> = ({ onClick, children }) => {
     return (
-        <a className={styles.link} >
+        <button className={styles.AuthLink} onClick={onClick}>
             {children}
-        </a>
+        </button>
     );
 };

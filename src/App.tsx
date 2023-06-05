@@ -11,14 +11,14 @@ import "./App.sass"
 function App() {
   return (
     <div className="App">
-          <Header/>
+      <Header/>
           <Routes>
             <Route path="/home" element={<HomePage/>}/>
             <Route path="/account" element={<AccountPage/>}/>
             <Route path="/points" element={<PointsPage/>}/>
             <Route path="/market" element={<MarketPage/>}/>
           </Routes>
-          <Footer/>
+      <Footer/>
     </div>
   );
 }
